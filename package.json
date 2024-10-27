@@ -1,4 +1,5 @@
 {
+    "homepage": "https://jwroe.github.io/alone-at-sea/",
     "name": "alone-at-sea",
     "private": true,
     "version": "0.0.0",
@@ -8,7 +9,9 @@
         "build": "tsc -b && vite build",
         "lint": "eslint .",
         "type-check": "tsc",
-        "preview": "vite preview"
+        "preview": "vite preview",
+        "predeploy": "npm run build",
+        "deploy": "gh-pages -d build"
     },
     "dependencies": {
         "@dnd-kit/core": "^6.1.0",
@@ -28,6 +31,7 @@
         "eslint": "^9.13.0",
         "eslint-plugin-react-hooks": "^5.0.0",
         "eslint-plugin-react-refresh": "^0.4.13",
+        "gh-pages": "^6.2.0",
         "globals": "^15.11.0",
         "postcss": "^8.4.47",
         "prettier": "3.3.3",
